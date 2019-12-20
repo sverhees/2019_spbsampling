@@ -17,7 +17,7 @@ colnames(wals_lang)[1] <- "id"
 sample100 <- wals_lang[(wals_lang$`sample 100` == TRUE),]
 sample200 <- wals_lang[(wals_lang$`sample 200` == TRUE),]
 
-wals_ev <- wals.feature(c("78a", "77a")) # somehow less values this way -- CHECK
+wals_ev <- wals.feature(c("78a", "77a"), na.rm = FALSE)
 colnames(wals_ev)[1] <- "id"
 
 ## My data
